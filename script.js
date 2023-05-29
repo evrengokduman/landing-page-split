@@ -5,10 +5,12 @@ const container = document.querySelector('.container')
 left.addEventListener('mouseenter', () => {
   container.classList.add('hover-left')
   left.style.setProperty('--left-bg-color', 'transparent')
+  console.log('mouse entered')
 })
 left.addEventListener('mouseleave', () => {
   container.classList.remove('hover-left')
-  left.style.setPropery('--left-bg-color', 'rgba(87, 84, 236, 0.7)')
+  left.style.setProperty('--left-bg-color', 'rgba(87, 84, 236, 0.7)')
+  console.log('mouse leave')
 })
 
 right.addEventListener('mouseenter', () => {
